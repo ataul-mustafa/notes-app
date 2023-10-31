@@ -1,0 +1,243 @@
+.notesContainer {
+    width: 70%;
+    height: 100vh;
+    background-color: #F7ECDC;
+}
+
+.notesContainer>.notesBox {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notesContainer>.notesBox>.head {
+    height: 98px;
+    background-color: #E8E8E8;
+    display: flex;
+    padding: 2%;
+    align-items: center;
+}
+
+.notesContainer>.notesBox>.head>img {
+    display: none;
+}
+
+.notesContainer>.notesBox>.head>.prflIcon {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.notesContainer>.notesBox>.head>.groupName {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.notesContainer>.notesBox>ul {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5%;
+    margin-bottom: 2%;
+    overflow-y: scroll;
+}
+
+.notesContainer>.notesBox>ul>li {
+    width: 90%;
+    margin-bottom: 5%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notesContainer>.notesBox>ul>li>.dateTime {
+    width: 15%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #353535;
+    line-height: 25px;
+}
+
+.notesContainer>.notesBox>ul>li>.note {
+    width: 85%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.notesContainer>.notesBox>.inputBox {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.notesContainer>.notesBox>.inputBox>textarea {
+    width: 95%;
+    height: 95%;
+    padding: 15px;
+    border: 1px solid #CCCCCC;
+    outline: none;
+    border-radius: 9px;
+    font-size: 29px;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.notesContainer>.notesBox>.inputBox>button {
+    position: absolute;
+    bottom: 9%;
+    right: 5%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.notesContainer>.notesImg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.notesContainer>.notesImg>img {
+    width: 626px;
+    height: 313px;
+}
+
+.notesContainer>.notesImg>h1 {
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    margin: 10px 0;
+}
+
+.notesContainer>.notesImg>p {
+    width: 70%;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2%;
+    line-height: 32px;
+    color: #292929;
+    text-align: center;
+}
+
+.notesContainer>.notesImg>.bottomPara {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: #292929;
+    bottom: 20px;
+}
+
+.notesContainer>.notesImg>.bottomPara>img {
+    margin-right: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .notesContainer {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .hideNotes {
+        display: none;
+    }
+
+    .notesContainer>.notesBox {
+        width: 100%;
+        height: 100%;
+    }
+
+    .notesContainer>.notesBox>.head>img {
+        margin: 0 10px 0 5px;
+        display: inline;
+    }
+
+
+
+    .notesContainer>.notesBox>.head {
+        height: 66px;
+    }
+
+    .notesContainer>.notesBox>.head>.prflIcon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        font-size: 16px;
+        padding: 15px 0;
+    }
+
+    .notesContainer>.notesBox>.head>.groupName {
+        font-size: 16px;
+    }
+
+    .notesContainer>.notesBox>ul {
+        height: 70%;
+        margin-top: 5%;
+    }
+
+    .notesContainer>.notesBox>ul>li {
+        width: 95%;
+    }
+
+    .notesContainer>.notesBox>ul>li>.dateTime {
+        width: 30%;
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .notesContainer>.notesBox>ul>li>.note {
+        width: 85%;
+        text-align: left;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 3.5%;
+    }
+
+    .notesContainer>.notesBox>.inputBox {
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .notesContainer>.notesBox>.inputBox>textarea {
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .notesContainer>.notesBox>.inputBox>button>img {
+        width: 21px;
+        height: 17px;
+    }
+
+    .notesContainer>.notesImg {
+        display: none;
+    }
+
+
+}

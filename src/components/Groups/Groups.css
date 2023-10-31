@@ -1,0 +1,86 @@
+.grpsContainer{
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.grpsContainer > h1{
+    font-size: 2rem;
+    font-family: Roboto;
+    margin: 10px 0 0 10px;
+}
+
+.grpsContainer > .grpsBox{
+    height: 80%;
+    padding: 5% 0 5% 5%;
+    overflow-y: scroll;
+}
+
+.grpsContainer > .grpsBox > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 32px 0px 0px 32px;
+    cursor: pointer;
+}
+
+.grpsContainer > .grpsBox > li > .profile{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.grpsContainer > .grpsBox > li > .name{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.clickBg{
+    background-color: #F7ECDC;
+}
+
+@media (max-width: 768px) {
+    .grpsContainer{
+        width: 100vw;
+        display: flex;
+    }
+    .hideGroups{
+        display: none;
+    }
+    .clickBg{
+        background-color: transparent;
+    }
+
+    .grpsContainer > h1{
+        font-size: 31px;
+        font-weight: 500;
+        margin: 10px 0 0 20px;
+    }
+
+    .grpsContainer > .grpsBox > li{
+        padding: 15px;
+    }
+
+    .grpsContainer > .grpsBox > li > .profile{
+        width: 62px;
+        height: 62px;
+        font-size: 21px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .grpsContainer > .grpsBox > li > .name{
+        font-size: 18px;
+        margin-left: 18px;
+    }
+
+}
